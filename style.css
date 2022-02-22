@@ -1,0 +1,102 @@
+body {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  text-align: center;
+  color: #000000;
+  background-color: #602b7a;
+  /**/
+  -webkit-touch-callout: none;
+  /* iOS Safari */
+  -webkit-user-select: none;
+  /* Chrome/Safari/Opera */
+  -khtml-user-select: none;
+  /* Konqueror */
+  -moz-user-select: none;
+  /* Firefox */
+  -ms-user-select: none;
+  /* Internet Explorer/Edge */
+  user-select: none;
+  /* Non-prefixed version, currently
+                                not supported by any browser */
+}
+
+#deskUser {
+    width: 90%;
+    margin: 10px 0;
+    font-size: 16px;
+    color: white;
+}
+
+#deskUser span {
+    color: gray;
+    font-weight: 300;
+}
+
+#room {
+    max-width: 90%;
+    border-radius: 4px;
+}
+
+#editDesk {
+    margin: 10px 0;
+    width: 90%;
+    height: 40px;
+    font-size: 18px;
+    font-weight: 700;
+    text-transform: uppercase;
+    background-color: #ffd749;
+    border-radius: 20px;
+}
+
+#deskDataPopUp {
+    display: none;
+    
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    
+    background-color: #000000aa;
+}
+
+#deskDataPopUp input {
+    display: block;
+    max-width: 600px;
+    width: 80%;
+    height: 40px;
+    font-size: 18px;
+    font-weight: 700;
+    border-radius: 20px;
+    text-align: center;
+}
+
+#deskDataPopUp div {
+    margin-top: 80px;
+    max-width: 600px;
+    width: 80%;
+    text-align: center;
+}
+
+#deskDataPopUp button {
+    margin: 10px auto;
+    width: 200px;
+    height: 40px;
+    font-size: 18px;
+    font-weight: 700;
+    text-transform: uppercase;
+    background-color: #ffd749;
+    border-radius: 20px;
+}

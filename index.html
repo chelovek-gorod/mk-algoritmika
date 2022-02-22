@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ru_RU">
+    <head>
+        <meta charset="UTF-8">
+
+        <!-- title and description -->
+        <title>MK Algoritmika</title>
+        <meta name="description" content="Распределение учеников на мастерклассе">
+
+        <!-- viewport -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!-- styles -->
+        <link rel="stylesheet" href="style.css" type="text/css">
+
+        <!-- icons -->
+        <link rel="icon" href="favicon.png"> <!--32х32-->
+
+        <link rel="apple-touch-icon" href="touch-icon-iphone.png"> <!--60х60-->
+        <link rel="apple-touch-icon" sizes="76x76" href="icons/touch-icon-ipad.png">
+        <link rel="apple-touch-icon" sizes="120x120" href="icons/touch-icon-iphone-retina.png">
+        <link rel="apple-touch-icon" sizes="152x152" href="icons/touch-icon-ipad-retina.png">
+
+        <!-- open graph -->
+        <meta property="og:title" content="MK Algoritmika" />
+
+        <meta property="og:url" content="https://chelovek-gorod.github.io/mk-algoritmika" />
+        <meta property="og:image" content="og-img.png" /> <!-- OG image is 1200×630 pixels  -->
+
+    </head>
+    <body>
+        
+        <div id="deskUser"><span>Парта не выбрана</span></div>
+
+        <object id="room" type="image/svg+xml" data="room.svg" onload="roomReady();"></object>
+        
+        <button id="editDesk" onclick="editDeskOnclick();">Редактировать</button>
+        
+        <div id="deskDataPopUp">
+            <input type="text" value="" id="newNameInput">
+            <div>
+                <button onclick="setName();">Сменить</button>
+                <button onclick="hidePopUp();">Отмена</button>
+            </div>
+            
+        </div>
+
+        <script src="main.js"></script>
+
+    </body>
+</html>
