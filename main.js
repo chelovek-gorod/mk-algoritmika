@@ -25,7 +25,10 @@ function roomReady() {
     const desksSvgArrSize = desksSvgArr.length;
     
     if (storage.getItem('deskUsersArr')) deskUsers = JSON.parse(storage.getItem('deskUsersArr'));
-    else deskUsers.length = desksSvgArr.length;
+    if (deskUsers.length != desksSvgArr.length) {
+        deskUsers = [];
+        deskUsers.length = desksSvgArr.length;
+    }
     
     console.log(deskUsers);
     
